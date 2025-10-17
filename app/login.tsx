@@ -26,12 +26,12 @@ export default function Login() {
             });
         }
 
-        router.push('/tela');
+        router.push('/pages/tela');
     };
 
     return (
-        <View style={{ flex: 1, backgroundColor: 'black' }}>
-            <Text style={{ color: 'white' }}>
+        <View style={{ flex: 1, backgroundColor: 'black', justifyContent:'center', padding:20, gap:40 }}>
+            <Text style={{ color: 'white', padding:10, fontSize:20 }}>
                 Login
             </Text>
 
@@ -39,8 +39,8 @@ export default function Login() {
 
             <TouchableOpacity
                 onPress={handleLogin}
-                style={{ width: '90%', backgroundColor: 'black' }}>
-                <Text style={{ color: 'white' }}>
+                style={{ width: '90%', backgroundColor: 'white', padding:10 }}>
+                <Text style={{ color: 'red' }}>
                     Logar
                 </Text>
             </TouchableOpacity>
